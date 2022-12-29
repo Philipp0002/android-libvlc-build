@@ -42,11 +42,10 @@ jobs:
       - name: Git clone
         run: |
           git clone https://code.videolan.org/videolan/vlc-android.git
-          cd ./vlc-android
 
       - name: Building
         run: |
-          ./buildsystem/compile.sh -l -a arm64
+          vlc-android/buildsystem/compile.sh -l -a arm64
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
           ANDROID_SDK: $ANDROID_HOME
