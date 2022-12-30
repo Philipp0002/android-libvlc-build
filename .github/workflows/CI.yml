@@ -49,10 +49,11 @@ jobs:
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
           ANDROID_SDK: $ANDROID_HOME
+          ANDROID_HOME: $ANDROID_HOME
 
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: androidBuild-${{ matrix.arch }}
-          path: ./libvlcjni/libvlc/jni/obj/local/arm64-v8a/
+          name: build
+          path: ./
           if-no-files-found: error
