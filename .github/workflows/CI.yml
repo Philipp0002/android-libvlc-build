@@ -45,11 +45,11 @@ jobs:
 
       - name: Building
         run: |
+          sudo chmod -R 777 vlc-android/buildsystem/compile.sh
           vlc-android/buildsystem/compile.sh -l -a arm64
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
           ANDROID_SDK: $ANDROID_HOME
-          ANDROID_HOME: $ANDROID_HOME
 
       - name: Upload Artifact
         uses: actions/upload-artifact@main
