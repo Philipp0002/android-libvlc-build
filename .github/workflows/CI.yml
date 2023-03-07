@@ -50,6 +50,8 @@ jobs:
         run: |
           sudo chmod -R 777 vlc-android/buildsystem/compile.sh
           cd vlc-android
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           buildsystem/compile.sh -l -a arm64
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
