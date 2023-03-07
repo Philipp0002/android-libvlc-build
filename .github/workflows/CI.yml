@@ -52,7 +52,7 @@ jobs:
           vlc-android/buildsystem/compile.sh -l -a arm64
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
-          ANDROID_SDK: $ANDROID_SDK_ROOT
+          ANDROID_SDK: /usr/local/lib/android/sdk
 
       - name: Upload Artifact
         uses: actions/upload-artifact@main
