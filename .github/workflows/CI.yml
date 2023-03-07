@@ -26,6 +26,9 @@ jobs:
           sudo apt install automake ant autopoint cmake build-essential libtool-bin \
               patch pkg-config protobuf-compiler ragel subversion unzip git \
               flex python2 wget
+              
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
 
       - name: Setup Android NDK
         uses: nttld/setup-ndk@main
