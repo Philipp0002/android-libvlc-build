@@ -22,8 +22,8 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev g++-multilib gcc-multilib libasound2-dev libx11-dev libxext-dev libxi-dev libxrandr-dev libxinerama-dev libmbedtls-dev libpng-dev libturbojpeg-dev libuv1-dev libvorbis-dev autoconf=2.69 m4=1.4.16 bison=3.0.0 meson=0.60.0
-          sudo apt install automake=1.15 ant autopoint cmake=3.17.0 build-essential libtool-bin=2.4 \
+          sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev g++-multilib gcc-multilib libasound2-dev libx11-dev libxext-dev libxi-dev libxrandr-dev libxinerama-dev libmbedtls-dev libpng-dev libturbojpeg-dev libuv1-dev libvorbis-dev autoconf m4 bison meson
+          sudo apt install automake ant autopoint cmake build-essential libtool-bin \
               patch pkg-config protobuf-compiler ragel subversion unzip git \
               flex python2 wget
               
