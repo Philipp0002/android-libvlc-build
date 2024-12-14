@@ -44,7 +44,7 @@ jobs:
 
       - name: Git clone
         run: |
-          git clone https://code.videolan.org/videolan/vlc-android.git
+          git clone https://github.com/videolan/vlc-android.git
 
       - name: Building
         run: |
