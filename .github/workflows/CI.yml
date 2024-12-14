@@ -61,5 +61,5 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: build
-          path: ./libvlcjni/
+          path: ./libvlcjni
           if-no-files-found: error
