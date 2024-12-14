@@ -52,7 +52,7 @@ jobs:
           cd vlc-android
           git config --global user.email "buildbot@videolan.org"
           git config --global user.name "VLC Android"
-          buildsystem/compile.sh -l -r -a all
+          buildsystem/compile.sh -l -r -a arm
         env:
           ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
           ANDROID_SDK: /usr/local/lib/android/sdk
