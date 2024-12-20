@@ -71,7 +71,7 @@ jobs:
           # Token access to repository
           access-token: ${{ secrets.ACCESS_TOKEN }}
           # Local file path/directory
-          file-path: ./
+          file-path: vlc-android
           # Repository owner
           owner: Philipp0002
           # Repository name
