@@ -77,5 +77,5 @@ jobs:
           # Repository name
           repo: android-libvlc
           # Branch name to upload the file to
-          branch-name: master
+          branch-name: main
       
