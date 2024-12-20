@@ -63,3 +63,19 @@ jobs:
           name: build
           path: ./vlc-android/libvlcjni
           if-no-files-found: error
+      - name: Upload to GitHub
+        # You may pin to the exact commit or the version.
+        # uses: LasyIsLazy/github-upload-action@997e5c85d66375559f76e55008ab63cbee71542e
+        uses: LasyIsLazy/github-upload-action@v0.2.0
+        with:
+          # Token access to repository
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          # Local file path/directory
+          file-path: ./
+          # Repository owner
+          owner: Philipp0002
+          # Repository name
+          repo: android-libvlc
+          # Branch name to upload the file to
+          branch-name: master
+      
